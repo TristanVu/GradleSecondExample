@@ -18,7 +18,7 @@ public final class Renderer {
 		List<Eval_360> evallst = eval360Service.findEval360ByListName(evalNames);
 		if (evallst != null) {
 			for (Eval_360 eval : evallst) {			    
-				System.out.println("Candidate Assessment id of " + eval.getName() + " : " + eval.getCandidateAssessmentId());
+				System.out.println("Candidate Assessment id of  " + eval.getName() + " : " + eval.getCandidateAssessmentId());
 			}
 		}
 		
