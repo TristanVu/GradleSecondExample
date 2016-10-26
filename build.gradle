@@ -1,0 +1,41 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    lombokVersion = '1.16.10'
+    springVersion = '4.2.6.RELEASE'
+    springDataVersion = '1.10.2.RELEASE'
+    hibernateVersion = '5.1.0.Final'    
+    postgresqlVersion = '9.4.1208'
+    mySQLVersion = '6.0.4'
+}
+
+dependencies {    
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    compile "org.springframework.data:spring-data-jpa:${springDataVersion}"
+    compile "org.hibernate:hibernate-entitymanager:${hibernateVersion}"
+    compile "org.hibernate:hibernate-core:${hibernateVersion}"
+    compile "org.postgresql:postgresql:${postgresqlVersion}"
+    compile "mysql:mysql-connector-java:${mySQLVersion}"
+}
+
+distZip.enabled = false
+
+mainClassName = "com.example.MainApp"
+
+jar {
+    baseName = 'helloworld'
+    version =  '0.1.0'
+}
+
+distTar {
+	baseName = 'helloworld'
+	version =  '0.1.0'
+
+	compression Compression.GZIP
+	extension 'tar.gz'
+}
