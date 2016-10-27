@@ -21,6 +21,7 @@ public class MainApp {
 		Renderer render = context.getBean(Renderer.class);
 		List<String> evalList = new ArrayList<String>();
 		evalList.add("Hey 360");
+		
 		evalList.add("Another 360");
 		
 		render.printOutEval360(evalList);
