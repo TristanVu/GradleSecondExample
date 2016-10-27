@@ -22,6 +22,7 @@ public class MainApp {
 		List<String> evalList = new ArrayList<String>();
 		evalList.add("Hey 360");
 		evalList.add("Another 360");
+		
 		render.printOutEval360(evalList);
 	}
 	private static void setDefaultSpringPropertySource() {
