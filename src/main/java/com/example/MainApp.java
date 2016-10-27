@@ -20,7 +20,7 @@ public class MainApp {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 		Renderer render = context.getBean(Renderer.class);
 		List<String> evalList = new ArrayList<String>();
-		evalList.add111("Hey 360");
+		evalList.add("Hey 360");
 		
 		evalList.add("Another 360");
 		
