@@ -1,5 +1,5 @@
-.idea
-.project
-.settings
-.classpath
-.class
+*.idea
+*.project
+*.settings
+*.classpath
+*.class
