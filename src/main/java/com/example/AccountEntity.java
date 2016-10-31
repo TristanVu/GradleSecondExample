@@ -14,4 +14,5 @@ public class AccountEntity {
     private int logoWidth;
     private String displayName;
     
+    
 }
